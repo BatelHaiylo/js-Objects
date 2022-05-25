@@ -80,10 +80,65 @@
 
 // console.log(boss);
 
+// var boss = {};
 
-var boss = {};
+// for (var i = 0; i < 4; i++) {
+//     boss[prompt()] = prompt("enter first name value");
+// }
+// console.log(boss);
 
-for (let i = 0; i < 4; i++) {
-    boss[prompt()] = prompt("enter first name value");
-}
-console.log(boss);
+// var user = {};
+
+// for (var i = 0; i < 4; i++) {
+//     document.write(user[prompt("enter key")] = (prompt("enter value"))+"<br>" +"</div>");
+// }
+
+
+// var myTeacher = {};
+
+// for(var i =0; i<2; i++;){
+//     var  myValue = prompt("enter your value")
+//     var  myKey = prompt("enter your key")
+//     myTeacher[myKey] = myValue
+//     document.write("<div>" + myTeacher[myKey] + "</div>")
+// }
+
+
+// var user 
+
+// document.write("<div>"+user.name+" "+user.age+" "+user.email+"</div>")
+
+// var car = {
+//     company: "",
+//     color: "",
+//     kilometragh :0 ,
+//     year: 0,
+// };
+
+// for(i=0; i<4; i++){
+//     car.company= prompt("enter your value")
+//     car.color  = prompt("enter your value")
+//     car.kilometragh  =+ prompt("enter your value")
+//     car.year  =+ prompt("enter your value")
+
+//     document.write("<div>" + car.company + car.color + car.kilometragh + car.year + "</div>")
+// }
+
+// function carData(){
+// var carsArray = [];
+// for(i=0; i<4; i++){
+//     var car = {};
+//     car.company= prompt("enter your car company");
+//     car.color  = prompt("enter your car color");
+//     car.kilometragh  =+ prompt("enter your car kilometragh");
+//     car.year  =+ prompt("enter your car year");
+
+//     carsArray.push(car);
+
+//     document.write("<div>" + car.company +" "+ car.color +" "+ car.kilometragh +" "+ car.year + "</div>");
+// }
+// console.log(carsArray);
+// }
+// carData();
+
+
