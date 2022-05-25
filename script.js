@@ -34,15 +34,56 @@
 // var checkKeyValue = studentsName
 // document.write(classRoom[checkKeyValue]);
 
-var kinderGarten = {
-    kinderGartenTeacher : "Ms.Brorya" , 
-    kinderNum : 10 ,
-    kindeName : ["a","b","c","d","e","f","g","h","i","j"] 
-}
+// var kinderGarten = {
+//     kinderGartenTeacher : "Ms.Brorya" , 
+//     kinderNum : 10 ,
+//     kindeName : ["a","b","c","d","e","f","g","h","i","j"] 
+// }
 
-for (let i = 0; i < kinderGarten.kindeName.length; i++) {
-    document.write((kinderGarten["kindeName"][i])+"<br>")
-}
+// for (let i = 0; i < kinderGarten.kindeName.length; i++) {
+//     document.write((kinderGarten["kindeName"][i])+"<br>")
+// }
 
-var userKey = prompt()
-document.write(kinderGarten[userKey])
+// var userKey = prompt()
+// document.write(kinderGarten[userKey])
+
+// var course = {}
+// course.courseNum = prompt()
+// course.studentseNum = prompt()
+// course.studentsAge = prompt()
+// console.log(course);
+
+// var myObject = {};
+//  document.write(myObject[prompt("enter key:")] = prompt("enter value:"));
+ 
+// var teacher = {};
+
+// var nameKey = prompt();
+// var nameValue = prompt();
+
+// console.log(teacher[nameKey] = nameValue);
+
+
+
+
+// var boss = {};
+
+// var fNameKey = prompt();
+// var lNameKey = prompt();
+// var ageKey =+ prompt();
+// var sallery =+ prompt();
+
+// boss[fNameKey] = prompt("enter first name value");
+// boss[lNameKey] = prompt("enter last name value");
+// boss[ageKey] = prompt("enter age value");
+// boss[sallery] = prompt("enter sallery value");
+
+// console.log(boss);
+
+
+var boss = {};
+
+for (let i = 0; i < 4; i++) {
+    boss[prompt()] = prompt("enter first name value");
+}
+console.log(boss);
