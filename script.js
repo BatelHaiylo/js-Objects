@@ -40,7 +40,7 @@
 //     kindeName : ["a","b","c","d","e","f","g","h","i","j"] 
 // }
 
-// for (let i = 0; i < kinderGarten.kindeName.length; i++) {
+// for (var i = 0; i < kinderGarten.kindeName.length; i++) {
 //     document.write((kinderGarten["kindeName"][i])+"<br>")
 // }
 
@@ -126,6 +126,7 @@
 
 // function carData(){
 // var carsArray = [];
+
 // for(i=0; i<4; i++){
 //     var car = {};
 //     car.company= prompt("enter your car company");
@@ -141,4 +142,202 @@
 // }
 // carData();
 
+// function catObjects(){
+//     var catArray = [];
+//     for (let i = 0; i < 3; i++) {
+//         var cat = {};
 
+//         cat.name = prompt("enter a cat name");
+//         cat.yearOfBirth = prompt("enter the cat year of birth");
+//         cat.type = prompt("enter the cat type");
+//         cat.width = prompt("enter the cat width");
+
+//         catArray.push(cat);
+
+//         document.write("<h1>"+cat.name+" "+cat.yearOfBirth+" "+cat.type+" "+cat.width+ "</h1>");
+//     }
+// }
+
+// function dogObject(){
+
+//     var userNumber =+ prompt("enter a number");
+//     var dogArray = [];
+
+//     for(i=0; i<userNumber; i++){
+
+//         var dog = {};
+
+//         dog.name = prompt("enter the dog name");
+//         dog.age = prompt("enter the dog age");
+//         dog.type = prompt("enter the dog type");
+//         dog.owners = prompt("enter the dog owners name");
+
+//         dogArray.push(dog);
+
+//         document.write("<p>"+dog.name +" "+dog.age +" "+dog.type+" "+dog.owners+" "+"</p>")
+//     }
+// }
+
+// function bugObject(){
+//     var userNumber =+ prompt("enter a number");
+//     var bugArray = [];
+
+//     for(i=0; i<userNumber; i++){
+
+//         var bug = {};
+//         bug.name = prompt("enter a bug name");
+//         bug.scientificName = prompt("enter the bug scientific name");
+//         bug.numLegs =+ prompt("how many legs does the bug have?");
+//         bug.wings = confirm("does the bug have wings");
+
+//         if(bug.wings){
+//             document.write("<h3>"+bug.name +" "+bug.scientificName +" "+bug.numLegs+" "+bug.wings+"</h3>");
+//             bugArray.push(bug);
+//         };
+
+//     };
+// }
+
+// function kidObject(){
+//     var userNumber =+ prompt("enter a number");
+//     var kidArray = [];
+
+//     for(i=0; i<userNumber; i++){
+
+//         var kid = {};
+//         kid.name = prompt("enter a kid name");
+//         kid.age =+ prompt("enter a kid age");
+//         kid.kinderGarten = confirm("does the kid go to kindergarten");
+
+//         if(kid.age>4){
+//             document.write("<p>"+kid.name +" "+kid.age +" "+kid.kinderGarten+"</p>");
+//             kidArray.push(kid);
+//         };
+//     };
+// };
+
+// function computerObject(number){
+//     var computerArray = [];
+
+//     for(i=0; i<number; i++){
+
+//         var computer = {};
+//         computer.company = prompt("enter a computer company");
+//         computer.model = prompt("enter the computer model");
+//         computer.width =+ prompt("enter a computer width");
+//         computer.stock = confirm("are there computers in stock");
+
+//         if(computer.stock && computer.width>2){
+//             document.write("<p>"+computer.company+" "+computer.model+" "+computer.width+" "+computer.stock+"</p>");
+//             computerArray.push(computer);
+//         };
+//     };
+// };
+
+// function teacherObject(number){
+//     var teacherArray = [];
+
+//     for(i=0; i<number; i++){
+
+//         var teacher = {};
+//         teacher.fullName = prompt("enter the teacher full name");
+//         teacher.HourlyWage =+ prompt("enter the teacher hourly wage");
+//         teacher.mail = prompt("enter the teacher email");
+//         teacher.yearOfBirth = prompt("enter the teacher year of birth");
+
+//         if(teacher.HourlyWage>100 || teacher.yearOfBirth<1990){
+//             document.write("<span>"+teacher.fullName+" "+teacher.HourlyWage+" "+teacher.mail+" "+teacher.yearOfBirth+"</span>");
+//             teacherArray.push(teacher);
+//         };
+//     };
+// };
+
+// function furnitureObject(number){
+//     var furnitureArray = [];
+
+//     for(i=0; i<number; i++){
+
+//         var furniture = {};
+//         furniture.name = prompt("enter the furniture name");
+//         furniture.brand = prompt("enter the furniture brand");
+//         furniture.storesArray = prompt("enter the furniture stores");
+//         furniture.price =+ prompt("enter the furniture price");
+
+//         furnitureArray.push(furniture.storesArray);
+
+//         document.write(furniture.name+"<br>"+furnitureArray);
+//     };
+// };
+
+// function apartmentObject(num){
+//     var interestedArray = []
+
+//     for(i=0; i<num; i++){
+
+//         var apartment = {};
+
+//         apartment.address = prompt("Indicate the address of  the apartment")
+//         apartment.rentPrice =+ prompt("Indicate the rent price of  the apartment")
+//         apartment.buyingPrice =+ prompt("Indicate the buying price of  the apartment")
+//         apartment.interested = prompt("name of the person interested in the apartment")
+//         apartment.mediation = confirm("is their a mediation")
+
+//         interestedArray.push(apartment.interested);
+
+//         if(!apartment.mediation){
+//             document.write(apartment.address+"<br>"+interestedArray);
+//         }
+//     };
+
+// };
+
+// function countryObject(){
+
+//     var num =+ prompt("enter a number");
+//     var citiesArray = [];
+
+//     for(i=0; i<num; i++){
+//         var country = {};
+//         country.name = prompt("enter the country name");
+//         country.numberOfCitizens =+ prompt("enter the number of citizens in the country");
+//         country.cities = prompt("enter a city name");
+//         country.chabadHouse = confirm("is there a Chabad house in this country?");
+
+//         citiesArray.push(country.cities);
+
+//         if(country.chabadHouse){
+//             document.write(country.name+"<br>"+country.cities)
+//         };
+//     };
+// };
+
+function movieObject(){
+    var userNum =+ prompt("enter a number")
+    var img = document.querySelector("img"); 
+
+    for(i=0; i<userNum; i++){
+        var movie = {};
+        movie.name = prompt("enter a movie name")
+        movie.numberOfViews =+ prompt("enter a movie name")
+        movie.year =+ prompt("enter a movie name")
+        movie.image = document.write("<img src='pic.jpg' />");
+
+        
+        
+        document.write(
+            "<h1>"+movie.name+"-"+movie.year+"</h1>"+ "<br>"+
+            "<img src='pic.jpg' />"+ "<br>"+
+            "<span>"+movie.numberOfViews+"</span>"
+        )
+    };
+};
+
+// var image_input = document.querySelector("#image-input");
+// image_input.addEventListener("change", function() {
+//   var reader = new FileReader();
+//   reader.addEventListener("load", () => {
+//     var uploaded_image = reader.result;
+//     document.querySelector("#display-image").style.backgroundImage = `url(${uploaded_image})`;
+//   });
+//   reader.readAsDataURL(this.files[0]);
+// });
