@@ -225,9 +225,9 @@
 //         computer.company = prompt("enter a computer company");
 //         computer.model = prompt("enter the computer model");
 //         computer.width =+ prompt("enter a computer width");
-//         computer.stock = confirm("are there computers in stock");
+//         computer.isStock = confirm("are there computers in stock");
 
-//         if(computer.stock && computer.width>2){
+//         if(computer.isStock && computer.width>2){
 //             document.write("<p>"+computer.company+" "+computer.model+" "+computer.width+" "+computer.stock+"</p>");
 //             computerArray.push(computer);
 //         };
@@ -253,43 +253,52 @@
 // };
 
 // function furnitureObject(number){
-//     var furnitureArray = [];
 
 //     for(i=0; i<number; i++){
 
 //         var furniture = {};
 //         furniture.name = prompt("enter the furniture name");
 //         furniture.brand = prompt("enter the furniture brand");
-//         furniture.storesArray = prompt("enter the furniture stores");
 //         furniture.price =+ prompt("enter the furniture price");
 
-//         furnitureArray.push(furniture.storesArray);
+//         var furnitureStoresArray = [];
+//         var numberOfStores =+ prompt("The number of furniture stores available:")
 
-//         document.write(furniture.name+"<br>"+furnitureArray);
-//     };
-// };
-
-// function apartmentObject(num){
-//     var interestedArray = []
-
-//     for(i=0; i<num; i++){
-
-//         var apartment = {};
-
-//         apartment.address = prompt("Indicate the address of  the apartment")
-//         apartment.rentPrice =+ prompt("Indicate the rent price of  the apartment")
-//         apartment.buyingPrice =+ prompt("Indicate the buying price of  the apartment")
-//         apartment.interested = prompt("name of the person interested in the apartment")
-//         apartment.mediation = confirm("is their a mediation")
-
-//         interestedArray.push(apartment.interested);
-
-//         if(!apartment.mediation){
-//             document.write(apartment.address+"<br>"+interestedArray);
+//         for(j=0; j<numberOfStores; j++){
+//             furniture.storesArray = prompt("enter the furniture stores");
+//             furnitureStoresArray.push(furniture.storesArray);
 //         }
-//     };
 
+//         document.write(furniture.name+"<br>"+furnitureStoresArray+"<br>");
+//     };
 // };
+
+function apartmentObject(num){
+
+    for(i=0; i<num; i++){
+
+        var apartment = {};
+
+        apartment.address = prompt("Indicate the address of  the apartment")
+        apartment.rentPrice =+ prompt("Indicate the rent price of  the apartment")
+        apartment.buyingPrice =+ prompt("Indicate the buying price of  the apartment")
+        apartment.isMediation = confirm("is their a mediation")
+
+        var interestedArray = [];
+        var numberOfInterested =+ prompt("The number of interested:")
+
+        for(j=0; j<numberOfInterested; j++){
+            apartment.interested = prompt("name of the person interested in the apartment");
+            interestedArray.push(apartment.interested);
+        }
+
+        interestedArray.push(apartment.interested);
+
+        if(!apartment.isMediation){
+            document.write(apartment.address+"<br>"+interestedArray);
+        }
+    };
+};
 
 // function countryObject(){
 
@@ -311,26 +320,26 @@
 //     };
 // };
 
-function movieObject(){
-    var userNum =+ prompt("enter a number")
-    var img = document.querySelector("img"); 
+// function movieObject(){
+//     var userNum =+ prompt("enter a number")
+//     var img = document.querySelector("img"); 
 
-    for(i=0; i<userNum; i++){
-        var movie = {};
-        movie.name = prompt("enter a movie name")
-        movie.numberOfViews =+ prompt("enter a movie name")
-        movie.year =+ prompt("enter a movie name")
-        movie.image = document.write("<img src='pic.jpg' />");
+//     for(i=0; i<userNum; i++){
+//         var movie = {};
+//         movie.name = prompt("enter a movie name") 
+//         movie.numberOfViews =+ prompt("enter a movie name") 
+//         movie.year =+ prompt("enter a movie name") 
+//         movie.image = prompt("enter a movie image")
 
         
         
-        document.write(
-            "<h1>"+movie.name+"-"+movie.year+"</h1>"+ "<br>"+
-            "<img src='pic.jpg' />"+ "<br>"+
-            "<span>"+movie.numberOfViews+"</span>"
-        )
-    };
-};
+//         document.write(
+//             "<h1>"+movie.name+"-"+movie.year+"</h1>"+ "<br>"+
+//             <img src=""+movie[image]+ "<br>"+
+//             "<span>"+movie.numberOfViews+"</span>"
+//         )
+//     };
+// };
 
 // var image_input = document.querySelector("#image-input");
 // image_input.addEventListener("change", function() {
